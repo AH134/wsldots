@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+	name = andy
+	email = andy@noreply.localhost
+
+[includeif "gitdir:~/github/"]
+    path = ~/.gitconfig-github
+
+[includeif "gitdir:~/forgejo/"]
+    path = ~/.gitconfig-forgejo
+
+
+

@@ -42,8 +42,11 @@ echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_COD
 sudo apt update
 sudo apt install temurin-25-jdk -y
 
+cd ~
+mkdir github forgejo
+
 cd "$HOME/wsldots"
-stow zsh starship
+stow zsh starship gitconfig git-profiles
 
 sudo chsh -s "$(which zsh)" "$USER"
 
